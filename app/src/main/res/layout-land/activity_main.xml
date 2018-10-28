@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.anike.contactlist.MainActivity">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/DisplayContactList">
+
+    </android.support.v4.view.ViewPager>
+
+    <android.support.v4.view.ViewPager
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/containerland">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

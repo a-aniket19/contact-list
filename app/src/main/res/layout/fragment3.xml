@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:weightSum="100"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:layout_height="0dp"
+    android:layout_weight="50">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="70"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_height="match_parent">
+    <TextView
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:text="Contact profile"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        />
+        <TextView
+            android:background="#FF4081"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:textStyle="bold"
+            android:text="Contact Name"
+            android:textSize="10sp"
+            android:textAlignment="viewStart"
+            android:paddingLeft="10dp"
+            />
+    
+    <TextView
+        android:background="@drawable/background"
+        android:id="@+id/NameInInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:text="Contact Name"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textAlignment="center" />
+        <TextView
+            android:background="#FF4081"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:textStyle="bold"
+            android:text="Contact Number"
+            android:textSize="10sp"
+            android:paddingLeft="10dp"
+            />
+    <TextView
+        android:background="@drawable/background"
+        android:id="@+id/NumberInInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:text="Contact Number"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="#000"
+        android:textSize="25sp"/>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/fragment3picture"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:background="@drawable/background"
+        />
+</LinearLayout>
+    <TextView
+        android:background="#FF4081"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:textStyle="bold"
+        android:text="Related T0"
+        android:textSize="10sp"
+        android:textAlignment="viewStart"
+        android:paddingLeft="10dp"
+
+        />
+
+    <ListView
+        android:layout_marginTop="3dp"
+        android:id="@+id/ListViewInInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#FF4081"
+    android:orientation="vertical"
+    android:weightSum="100"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="40"
+    android:weightSum="100"
+    android:orientation="horizontal"
+    android:layout_height="0dp">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="70"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:background="@drawable/background"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/NameInDetails"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:hint="Enter the Name"
+            />
+
+        <EditText
+            android:id="@+id/NumberInDetail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:hint="Enter the contact number"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="0dp"
+        android:layout_weight="30"
+        android:src="@drawable/contacticon"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/background"
+        />
+
+</LinearLayout>
+
+
+    <ListView
+        android:id="@+id/ListVIewInDetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="49"
+        android:background="@drawable/background">
+
+    </ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:id="@+id/AddButtonInFragment2"
+        android:text="Add"
+        android:textSize="8dp"
+        android:textAlignment="center"
+        android:onClick="AddContact"
+        android:layout_gravity="end"
+        />
+</LinearLayout>
